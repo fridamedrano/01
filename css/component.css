@@ -1,0 +1,82 @@
+/* General styles for all menus */
+.cbp-spmenu {
+	background: #eaeaea;
+	position: fixed;
+	margin-bottom:-9999px;
+	padding-bottom:9999px;
+}
+
+.cbp-spmenu h3 {
+	color: #999;
+	border-bottom:1px solid #dddddd;
+	font-size: 1.9em;
+	padding: 20px;
+	margin: 0;
+	font-weight: 300;
+}
+
+.cbp-spmenu p {
+	color: #999;
+	margin-bottom: 5%;
+	font-size: 1em;
+	padding-left: 20px;
+	padding-top: 15px;
+	padding-right: 20px;
+	margin: 0;
+	font-weight: 300;
+}
+
+.cbp-spmenu a {
+	color: #999;
+	margin: 0;
+	font-size: 1.1em;
+	font-weight: 300;
+	padding: 0;
+}
+
+.cbp-spmenu a:hover {
+	color: #29b473;
+	text-decoration: none;
+}
+
+.cbp-spmenu a:active {
+	background: #afdefa;
+	color: #47a3da;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {
+	width: 240px;
+	height: 100%;
+	z-index: 1000;
+}
+
+.cbp-spmenu-vertical a {
+	padding-right: 1.5em;
+}
+
+
+/* Vertical menu that slides from the left or right */
+
+.cbp-spmenu-left {
+	left: -240px;
+}
+
+.cbp-spmenu-right {
+	right: -240px;
+}
+
+.cbp-spmenu-left.cbp-spmenu-open {
+	left:0px;
+}
+
+
+/* Transitions */
+
+.cbp-spmenu,
+.cbp-spmenu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
